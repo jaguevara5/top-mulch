@@ -1,0 +1,10 @@
+#messageSentWrapper {
+    font-family: 'Oswald', serif;
+    font-weight: 300;
+    color: #130202;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3.75em;
+    padding-top: 60px;
+    padding-bottom: 120px;
+}

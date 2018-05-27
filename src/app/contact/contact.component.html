@@ -1,0 +1,66 @@
+<div class="container clearfix" *ngIf="!messageSent">
+  <h1>Contact Us</h1>
+  <div class="col1-contact">
+    <ul class="contact-info">
+      <li>
+        <h3>Top Mulch Garden Center</h3>
+      </li>
+      <li>
+        <img class="phone" src="../../assets/img/phone-footer.png" /> (713) 907-0239</li>
+      <li>
+        <img class="phone" src="../../assets/img/location-footer.png" />
+        <a href="http://maps.google.com/maps?q=5210+Quail+West,+Alvin,+TX+77511">
+          5210 Quail West, Alvin, TX 77511</a>
+      </li>
+      <li>
+        <img class="phone" src="../../assets/img/mail-contact.png" />
+        <a href="mailto:top.mulch11@gmail.com"> top.mulch11@gmail.com</a>
+      </li>
+    </ul>
+    <ul class="contact-info">
+      <li>
+        <h3>Business Hours:</h3>
+      </li>
+      <li>
+        <strong>Mon-Fri:</strong> 7:00 am to 7:00 pm</li>
+      <li>
+        <strong>Sat:</strong> 7:00 am to 5:00 pm</li>
+    </ul>
+  </div>
+  <div class="col2-contact">
+    <form #f="ngForm" (ngSubmit)="sendMessage(f)" novalidate>
+      <table>
+        <tr>
+          <th>
+            <label for="name">Name</label>
+          </th>
+          <td>
+            <input type="text" id="name" name="name" ngModel required />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="email">Email</label>
+          </th>
+          <td>
+            <input type="text" id="email" name="email" ngModel required/>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="message">Message</label>
+          </th>
+          <td>
+            <textarea id="message" name="message" ngModel required></textarea>
+          </td>
+        </tr>
+      </table>
+      <div class="send-btn-wrapper">
+        <button class="red-btn">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div *ngIf="messageSent" id="messageSentWrapper">
+ Your message has been sent. We will cantact you shorlty.
+</div>

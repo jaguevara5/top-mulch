@@ -1,0 +1,43 @@
+
+/**************************************
+
+    PRICE PAGE
+
+***************************************/
+
+.price-table {
+    display: block;
+    width:100%;
+    margin: 10px auto;
+    font-family: 'Roboto', serif;
+    font-size: 1.25em;
+}
+
+.price-table th {
+    text-align: left;
+    background-color: #BB1111;
+    color: #fff;
+}
+
+.price-table tbody, .price-table tr{
+    display: block;
+    width: 100%;
+    color: #130202;
+}
+
+.table-col1 {
+    display: inline-block;
+    width: 69%;
+}
+
+.table-col2 {
+    display: inline-block;
+    width: 29%;
+}
+.price-table tr td {
+    color: #130202;
+}
+
+.price-table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
